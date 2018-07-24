@@ -52,7 +52,7 @@ html {
 }
 
 header {
-    background-color: #eeeeee;
+    background-color: #eee;
 }
 
 .inner-header-logo {
@@ -105,37 +105,37 @@ header {
 
 .site-navigation a:active,
 .user-navigation a:active {
-    color: #000000;
     opacity: 0.3;
+    color: #000;
 }
 
 .site-navigation .active {
-    color: #000000;
+    color: #000;
     border-bottom: 2px solid #fb565a;
 }
 
 .slider-list {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .slider-item h3 {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 55px;
     font-weight: 500;
     font-style: normal;
     line-height: 55px;
+    margin: 0;
     text-align: left;
 }
 
 .slider-item p {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
+    margin: 0;
     text-align: left;
     color: #283136;
 }
@@ -146,9 +146,9 @@ header {
     font-weight: 500;
     line-height: 18px;
     text-align: center;
-    color: #ffffff;
-    outline: none;
     text-transform: uppercase;
+    color: #fff;
+    outline: none;
 }
 
 .slider .common-button {
@@ -163,15 +163,19 @@ header {
 .slider .common-button:active {
     opacity: 0.3;
     background-color: #d7373b;
-    box-shadow: inset 0px 3px 0 0 #00010119;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 
 /* внутреняя страница */
 
+.site-navigation-list .active,
+.site-navigation-list .active:hover,
+.site-navigation-list .active:focus {
+    border-bottom: 2px solid #fb565a;
+}
+
 header h3 {
-    padding: 0;
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-family: Roboto;
     font-size: 55px;
@@ -179,9 +183,11 @@ header h3 {
     font-style: normal;
     font-stretch: normal;
     line-height: 55px;
-    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    color: #000000;
+    letter-spacing: normal;
+    color: #000;
 }
 
 .filter fieldset {
@@ -195,17 +201,54 @@ header h3 {
     font-style: normal;
     font-stretch: normal;
     line-height: 30px;
-    letter-spacing: 0.2px;
     text-align: left;
-    color: #000000;
+    letter-spacing: 0.2px;
     text-transform: uppercase;
+    color: #000;
 }
 
 .filter-list-grid,
 .filter-list-feature {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.range-controls {
+    position: relative;
+    width: 261px;
+    padding-top: 39px;
+    padding-right: 21px;
+    padding-bottom: 40px;
+    padding-left: 21px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.range-controls .scale {
+    width: 219px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 159px;
+    height: 2px;
+    background-color: rgb(0, 204, 115);
+}
+
+.range-controls .range-toggle {
+    position: absolute;
+    top: 29px;
+    width: 21px;
+    height: 24px;
+    background-image: url("../img/filterButton.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.range-controls .range-toggle-max {
+    left: 170px;
 }
 
 .range-data span {
@@ -215,75 +258,75 @@ header h3 {
     font-style: normal;
     font-stretch: normal;
     line-height: 22px;
-    letter-spacing: normal;
     text-align: left;
+    letter-spacing: normal;
     color: #283136;
 }
 
 .range-data input {
-    background-color: #eeeeee;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 22px;
-    letter-spacing: normal;
     text-align: center;
+    letter-spacing: normal;
     color: #283136;
     border: none;
     outline: none;
+    background-color: #eee;
 }
 
 .filter-item label {
-    /* временный отступ */
-    padding-left: 40px;
-    position: relative;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 20px;
-    letter-spacing: normal;
-    text-align: left;
-    color: #283136;
+    position: relative;
+    /* временный отступ */
+    padding-left: 40px;
     cursor: pointer;
+    text-align: left;
+    letter-spacing: normal;
+    color: #283136;
 }
 
 .filter-list-grid label::before {
     position: absolute;
-    content: "";
-    width: 26px;
-    height: 26px;
     top: 0;
     left: 0;
+    width: 26px;
+    height: 26px;
+    content: "";
+    opacity: 0.4;
     background-image: url(../img/radioOff.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    opacity: 0.4;
 }
 
 .filter-list-feature label::before {
     position: absolute;
-    content: "";
-    width: 26px;
-    height: 26px;
     top: 0;
     left: 0;
+    width: 26px;
+    height: 26px;
+    content: "";
+    opacity: 0.4;
     background-image: url(../img/checkboxOff.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    opacity: 0.4;
 }
 
 .filter-list-grid input:checked~label::before {
-    background-image: url(../img/radioOn.svg);
     opacity: 0.4;
+    background-image: url(../img/radioOn.svg);
 }
 
 .filter-list-feature input:checked~label::before {
-    background-image: url(../img/checkboxOn.svg);
     opacity: 0.4;
+    background-image: url(../img/checkboxOn.svg);
 }
 
 input:hover~label::before,
@@ -304,33 +347,283 @@ input:checked:active~label::before {
     opacity: 0.1;
 }
 
+.filter button {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    outline-style: none;
+    background-color: #eee;
+}
 
-/* внутренняя страница */
+.filter button:hover,
+.filter button:focus {
+    background-color: #dfdfdf;
+}
+
+.filter button:active {
+    color: #0000004c;
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 #00010119;
+}
+
+.sort p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.sort-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sort-list a {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: normal;
+    opacity: 0.3;
+    color: #000;
+    outline: none;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+    opacity: 0.6;
+}
+
+.sort-list a:active,
+.sort-list .active,
+.sort-list .active:hover,
+.sort-list .active:focus {
+    opacity: 1;
+}
+
+.sort-button {
+    outline: none;
+}
+
+.sort-button path {
+    opacity: 0.2;
+    fill: #a6a6a6;
+}
+
+.sort-button:hover path,
+.sort-button:focus path {
+    opacity: 1;
+}
+
+.sort-button:active path,
+.sort-button-active path,
+.sort-button-active:hover path,
+.sort-button-active:focus path {
+    opacity: 1;
+    fill: #231f20;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 33px;
+    z-index: 20;
+    width: 360px;
+    /* test  */
+    padding-top: 39px;
+    list-style: none;
+    border: solid 1px #00010119;
+}
+
+.catalog-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 40px;
+    content: "";
+    opacity: 0.12;
+    background-image: url("../img/browser.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.catalog-item:hover::before {
+    opacity: 1;
+}
+
+.catalog-item:hover {
+    border: solid 1px #4d4d4d19;
+    box-shadow: 0 6px 15px 0 #00010140;
+}
+
+.catalog-item:hover .button-select {
+    display: block;
+}
+
+.catalog-item img {
+    width: 360px;
+    height: 576px;
+}
+
+.catalog-item .common-button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #fb565a;
+}
+
+.catalog-item .common-button:hover,
+.catalog-item .common-button:focus {
+    background-color: #e74246;
+}
+
+.catalog-item .common-button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 #00010119;
+}
+
+.button-select {
+    position: absolute;
+    top: 384px;
+    left: 0;
+    display: none;
+    width: 360px;
+    height: 231px;
+    background-color: #eee;
+}
+
+.button-select h4 {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.button-select p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: normal;
+    color: #666;
+}
+
+.button-select .common-button {
+    background-color: #fb565a;
+}
+
+.button-select .common-button:hover,
+.button-select .common-button:focus {
+    background-color: #e74246;
+}
+
+.button-select .common-button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 #00010119;
+}
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-list a {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #eee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+    color: rgba(0, 0, 0, 0.298);
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 #00010119;
+}
+
+.pagination-list .active,
+.pagination-list .active:hover,
+.pagination-list .active:focus {
+    border: solid 3px #dbdbdb;
+    background-color: transparent;
+}
+
+
+/* внутренняя страница конец */
 
 .service-list {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .service-item h4 {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    margin: 0;
     text-align: left;
-    color: #000000;
+    color: #000;
 }
 
 .service-item p {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 24px;
+    margin: 0;
     text-align: left;
 }
 
@@ -351,7 +644,7 @@ input:checked:active~label::before {
 .service-item:nth-child(1) .common-button:active {
     color: #ffffff4c;
     background-color: #d7373b;
-    box-shadow: inset 0px 3px 0 0 #00010119;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 .service-item:nth-child(2) .common-button {
@@ -366,7 +659,7 @@ input:checked:active~label::before {
 .service-item:nth-child(2) .common-button:active {
     color: #ffffff4c;
     background-color: #00aa62;
-    box-shadow: inset 0px 3px 0 0 #00010119;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 .service-item:nth-child(3) .common-button {
@@ -381,27 +674,27 @@ input:checked:active~label::before {
 .service-item:nth-child(3) .common-button:active {
     color: #ffffff4c;
     background-color: #e5a722;
-    box-shadow: inset 0px 3px 0 0 #00010119;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 .advantages h3 {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-    color: #000000;
+    margin: 0;
     text-align: left;
+    color: #000;
 }
 
 .advantages p {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 24px;
+    margin: 0;
     text-align: left;
     color: #283136;
 }
@@ -415,10 +708,10 @@ input:checked:active~label::before {
 
 .advantages .advantages-header,
 .features .features-header {
-    margin: 0;
     font-weight: bold;
-    color: #000000;
+    margin: 0;
     text-transform: uppercase;
+    color: #000;
 }
 
 .features img {
@@ -427,33 +720,33 @@ input:checked:active~label::before {
 }
 
 .features-item h4 {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 45px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    letter-spacing: normal;
+    margin: 0;
     text-align: left;
-    color: #000000;
+    letter-spacing: normal;
+    color: #000;
 }
 
 .features-item p {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 18px;
-    letter-spacing: normal;
+    margin: 0;
     text-align: left;
+    letter-spacing: normal;
     color: #283136;
 }
 
 .projects ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -496,34 +789,34 @@ input:checked:active~label::before {
 }
 
 .contacts-card h4 {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 30px;
+    margin: 0;
     text-align: left;
-    color: #000000;
+    color: #000;
 }
 
 .contacts-card p {
-    margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 18px;
-    letter-spacing: normal;
+    margin: 0;
     text-align: left;
-    color: #666666;
+    letter-spacing: normal;
+    color: #666;
 }
 
 .contacts-card .common-button {
-    background-color: #fb565a;
-    border: none;
     cursor: pointer;
+    border: none;
+    background-color: #fb565a;
 }
 
 .footer-social ul {
@@ -534,12 +827,12 @@ input:checked:active~label::before {
 
 .social-list li {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 79px;
     height: 79px;
     border-radius: 50%;
     background-color: #e1e1e1;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-list li:hover,
@@ -549,98 +842,98 @@ input:checked:active~label::before {
 
 .social-list li:active {
     background-color: #d7373b;
-    box-shadow: inset 0px 3px 0 0 #00010119;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 .discount h3 {
-    margin: 0;
-    padding: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 36px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 36px;
-    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
     text-align: left;
-    color: #000000;
+    letter-spacing: normal;
+    color: #000;
 }
 
 .discount p {
-    margin: 0;
-    padding: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 22px;
-    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
     text-align: left;
-    color: #444444;
+    letter-spacing: normal;
+    color: #444;
 }
 
 .modal-feedback {
-    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.753);
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.753);
 }
 
 .modal-feedback h3 {
-    margin: 0;
-    padding: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 45px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     line-height: 45px;
-    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
     text-align: left;
-    color: #000000;
+    letter-spacing: normal;
+    color: #000;
 }
 
 .feedback-form label {
-    margin: 0;
-    padding: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 18px;
-    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
     text-align: left;
-    color: #000000;
+    letter-spacing: normal;
+    color: #000;
 }
 
 .feedback-form input {
-    outline: none;
-    border: none;
-    background-color: #ffffff;
-    border: solid 2px #d7dcde;
-    opacity: 0.5;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 18px;
-    letter-spacing: normal;
     text-align: left;
-    color: #444444;
+    letter-spacing: normal;
+    opacity: 0.5;
+    color: #444;
+    border: none;
+    border: solid 2px #d7dcde;
+    outline: none;
+    background-color: #fff;
 }
 
 .feedback-form input:hover,
 .feedback-form textarea:hover {
-    outline: none;
     border: solid 2px #b4b9bb;
+    outline: none;
 }
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-    outline: none;
     opacity: 1;
-    color: #444444;
-    border: solid 2px #000000;
+    color: #444;
+    border: solid 2px #000;
+    outline: none;
 }
 
 .feedback-form .wrong-data {
@@ -649,10 +942,10 @@ input:checked:active~label::before {
 }
 
 .feedback-form .common-button {
+    cursor: pointer;
     border: none;
     outline: none;
     background-color: #fb565a;
-    cursor: pointer;
 }
 
 .modal-feedback .modal-close {
@@ -661,10 +954,10 @@ input:checked:active~label::before {
 
 .modal-feedback .modal-close {
     position: absolute;
-    background-color: transparent;
-    outline: none;
-    border: none;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .modal-close svg {
