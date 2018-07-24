@@ -51,14 +51,28 @@ html {
     box-sizing: border-box;
 }
 
+.index-wrapper {
+    width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 header {
     background-color: #eee;
 }
 
+.main-header-logo,
+.inner-header-logo {
+    width: 160px;
+    margin-right: 202px;
+}
 .inner-header-logo {
     cursor: pointer;
     outline: none;
+    
 }
+
 
 .inner-header-logo:hover svg,
 .inner-header-logo:focus svg {
@@ -84,10 +98,19 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width: 438px;
+    margin-right: 245px;
 }
 
 .user-navigation ul {
     text-align: right;
+    
 }
 
 .site-navigation a,
