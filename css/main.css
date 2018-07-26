@@ -853,6 +853,19 @@ input:checked:active~label::before {
     margin-bottom: 80px;
 }
 
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid #e1e1e1;
+    margin-bottom: 71px;
+}
+
+.advantages {
+    width: 650px;
+    margin-right: 149px;
+    padding-top: 80px;
+}
+
 .advantages h3 {
     font-family: Roboto, Arial, sans-serif;
     font-size: 45px;
@@ -861,6 +874,7 @@ input:checked:active~label::before {
     margin: 0;
     text-align: left;
     color: #000;
+    margin-bottom: 31px;
 }
 
 .advantages p {
@@ -873,6 +887,30 @@ input:checked:active~label::before {
     margin: 0;
     text-align: left;
     color: #283136;
+}
+
+.advantages p:first-of-type {
+    margin-bottom: 41px;
+}
+
+.advantages li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.advantages li:last-child {
+    margin-bottom: 0;
+}
+
+.advantages li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
 }
 
 .advantages ul,
@@ -890,12 +928,45 @@ input:checked:active~label::before {
     color: #000;
 }
 
+.features .features-header {
+    margin-bottom: 45px;
+}
+
+.advantages .advantages-header {
+    margin-bottom: 20px;
+}
+
+.features {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
 .features img {
     width: 360px;
     height: 208px;
+    margin-bottom: 37px;
 }
 
-.features-item h4 {
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-list li {
+    display: flex;
+    flex-direction: column;
+    width: 93px;
+}
+
+.features-item span {
+    vertical-align: super;
+    font-size: 20px;
+}
+
+.features-item .percent {
     font-family: Roboto, Arial, sans-serif;
     font-size: 45px;
     font-weight: bold;
@@ -905,9 +976,10 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
+    margin-bottom: 26px;
 }
 
-.features-item p {
+.features-item .indicator {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -920,10 +992,45 @@ input:checked:active~label::before {
     color: #283136;
 }
 
+.projects {
+    padding-top: 46px;
+    margin-bottom: 44px;
+    border-top: 2px solid #e1e1e1;
+}
+
 .projects ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects li {
+    width: 290px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.projects li::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    top: 9%;
+    right: 0;
+    height: 52px;
+    background-color: #e1e1e1;
+    transform: rotate(180deg);
+}
+
+.projects li:nth-child(4n)::after {
+    display: none;
 }
 
 .project-item:nth-child(1) img {
@@ -959,9 +1066,39 @@ input:checked:active~label::before {
     opacity: 0.1;
 }
 
+.contacts {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 80px;
+    border-top: 2px solid #e1e1e1;
+    margin-bottom: 69px;
+    position: relative;
+}
+
+.contacts::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mapMarkerPng.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 50%;
+    right: 60px;
+    width: 213px;
+    height: 190px;
+}
+
 .contacts img {
     width: 1440px;
     height: 416px;
+}
+
+.contacts-card {
+    width: 319px;
+    padding: 48px 50px;
+    position: absolute;
+    top: 35%;
+    left: 100px;
+    background-color: #ffffff;
 }
 
 .contacts-card h4 {
@@ -974,6 +1111,7 @@ input:checked:active~label::before {
     margin: 0;
     text-align: left;
     color: #000;
+    margin-bottom: 26px;
 }
 
 .contacts-card p {
@@ -987,12 +1125,15 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #666;
+    margin-bottom: 37px;
 }
 
 .contacts-card .common-button {
+    width: 219px;
     cursor: pointer;
     border: none;
     background-color: #fb565a;
+    padding: 17px 0;
 }
 
 .footer-social ul {
