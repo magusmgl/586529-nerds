@@ -106,6 +106,7 @@ html {
     line-height: 30px;
     text-align: left;
     color: #000;
+    text-transform: uppercase;
 }
 
 .site-navigation ul,
@@ -116,11 +117,12 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 25px;
 }
 
 .site-navigation {
     width: 438px;
-    margin-right: 245px;
+    margin-right: 240px;
 }
 
 .user-navigation ul {
@@ -176,8 +178,8 @@ html {
 
 .slider-controls {
     position: absolute;
-    left: 50%;
-    bottom: 90px;
+    left: 528px;
+    bottom: 97px;
     z-index: 100;
     width: 160px;
     height: 18px;
@@ -264,13 +266,13 @@ html {
 
 .slider-item {
     display: none;
-    padding: 78px 0 80px 0;
+    padding: 71px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 93% 18px;
+    background-position: 93% 12px;
 }
 
 .slider-item:nth-child(2) {
@@ -779,6 +781,7 @@ input:checked:active~label::before {
     margin: 0;
     text-align: left;
     color: #000;
+    text-transform: uppercase;
 }
 
 .service-item p {
@@ -994,8 +997,10 @@ input:checked:active~label::before {
 
 .projects {
     padding-top: 46px;
-    margin-bottom: 44px;
+    padding-bottom: 44px;
+    margin-bottom: 80px;
     border-top: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
 }
 
 .projects ul {
@@ -1008,7 +1013,7 @@ input:checked:active~label::before {
     align-items: center;
 }
 
-.projects li {
+.projects a {
     width: 290px;
     height: 96px;
     display: flex;
@@ -1016,9 +1021,10 @@ input:checked:active~label::before {
     margin: 0;
     padding: 0;
     position: relative;
+    outline: none;
 }
 
-.projects li::after {
+.projects a::after {
     position: absolute;
     content: "";
     width: 2px;
@@ -1029,7 +1035,7 @@ input:checked:active~label::before {
     transform: rotate(180deg);
 }
 
-.projects li:nth-child(4n)::after {
+.projects li:nth-child(4n) a::after {
     display: none;
 }
 
@@ -1068,11 +1074,14 @@ input:checked:active~label::before {
 
 .contacts {
     width: 1440px;
+    height: 416px;
     margin: 0 auto;
     padding-top: 80px;
     border-top: 2px solid #e1e1e1;
-    margin-bottom: 69px;
     position: relative;
+    background-image: url("../img/2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .contacts::before {
@@ -1081,8 +1090,8 @@ input:checked:active~label::before {
     background-image: url("../img/mapMarkerPng.png");
     background-position: 0 0;
     background-repeat: no-repeat;
-    top: 50%;
-    right: 60px;
+    top: 85px;
+    right: 405px;
     width: 213px;
     height: 190px;
 }
@@ -1096,8 +1105,8 @@ input:checked:active~label::before {
     width: 319px;
     padding: 48px 50px;
     position: absolute;
-    top: 35%;
-    left: 100px;
+    top: 54px;
+    left: 140px;
     background-color: #ffffff;
 }
 
@@ -1134,15 +1143,45 @@ input:checked:active~label::before {
     border: none;
     background-color: #fb565a;
     padding: 17px 0;
+    outline: none;
+}
+
+.contacts-card .common-button:hover,
+.contacts-card .common-button:focus {
+    background-color: #e74246;
+}
+
+.contacts-card .common-button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px 0 0 #00010119;
+}
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 69px;
+    margin-top: 69px;
+}
+
+.footer-social {
+    width: 262px;
+    margin-right: 139px;
+}
+
+.discount {
+    width: 550px;
 }
 
 .footer-social ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.social-list li {
+.social-list a {
     display: flex;
     width: 79px;
     height: 79px;
@@ -1150,14 +1189,15 @@ input:checked:active~label::before {
     background-color: #e1e1e1;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
-.social-list li:hover,
-.social-list li:focus {
+.social-list a:hover,
+.social-list a:focus {
     background-color: #e74246;
 }
 
-.social-list li:active {
+.social-list a:active {
     background-color: #d7373b;
     box-shadow: inset 0 3px 0 0 #00010119;
 }
@@ -1174,6 +1214,7 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
+    margin-bottom: 9px;
 }
 
 .discount p {
@@ -1192,6 +1233,20 @@ input:checked:active~label::before {
 
 .modal-feedback {
     box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.753);
+    width: 960px;
+    padding: 73px 100px 84px 100px;
+    position: relative;
+    display: none;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-bottom: -295px;
+    position: fixed;
+    background-color: #ffffff;
+}
+
+.modal-show {
+    display: block;
 }
 
 .modal-feedback h3 {
@@ -1206,6 +1261,23 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
+    margin-bottom: 49px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    width: 360px;
+    margin-bottom: 35px;
+}
+
+.textarea-wrapper {
+    width: 760px;
+    margin-bottom: 47px;
 }
 
 .feedback-form label {
@@ -1220,6 +1292,7 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
+    margin-bottom: 9px;
 }
 
 .feedback-form input {
@@ -1237,6 +1310,17 @@ input:checked:active~label::before {
     border: solid 2px #d7dcde;
     outline: none;
     background-color: #fff;
+    padding: 18px 16px;
+    width: 360px
+}
+
+.feedback-form textarea {
+    width: 760px;
+    padding: 18px 16px;
+    border: none;
+    border: solid 2px #d7dcde;
+    color: #444;
+    outline: none;
 }
 
 .feedback-form input:hover,
@@ -1263,6 +1347,19 @@ input:checked:active~label::before {
     border: none;
     outline: none;
     background-color: #fb565a;
+    width: 260px;
+    outline: none;
+    padding: 18px 0;
+}
+
+.feedback-form .common-button:hover,
+.feedback-form .common-button:focus {
+    background-color: #e74246;
+}
+
+.feedback-form .common-button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 #00010119;
 }
 
 .modal-feedback .modal-close {
@@ -1275,6 +1372,9 @@ input:checked:active~label::before {
     border: none;
     outline: none;
     background-color: transparent;
+    position: absolute;
+    top: 78px;
+    right: 90px;
 }
 
 .modal-close svg {
