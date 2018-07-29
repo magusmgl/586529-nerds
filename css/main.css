@@ -76,6 +76,7 @@ html {
     margin-top: 49px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 82px;
 }
 
 .main-header-logo,
@@ -328,6 +329,10 @@ html {
     border-bottom: 2px solid #fb565a;
 }
 
+.inner-page .main-header {
+    margin-bottom: 57px;
+}
+
 header h3 {
     font-family: Roboto, Arial, sans-serif;
     font-family: Roboto;
@@ -341,10 +346,56 @@ header h3 {
     text-align: center;
     letter-spacing: normal;
     color: #000;
+    margin-bottom: 116px;
+}
+
+.inner-page .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 261px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sort {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 59px;
+}
+
+.sort-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sort-item {
+    margin-right: 26px;
+}
+
+.sort .sort-item:last-child {
+    margin-right: 0;
 }
 
 .filter fieldset {
     border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+.filter fieldset:first-child {
+    margin-bottom: 62px;
 }
 
 .filter legend {
@@ -358,6 +409,11 @@ header h3 {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     color: #000;
+    margin-bottom: 21px;
+}
+
+fieldset:first-child legend {
+    margin-bottom: 50px;
 }
 
 .filter-list-grid,
@@ -374,8 +430,10 @@ header h3 {
     padding-right: 21px;
     padding-bottom: 40px;
     padding-left: 21px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #eee;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .range-controls .scale {
@@ -404,7 +462,13 @@ header h3 {
     left: 170px;
 }
 
-.range-data span {
+.range-data {
+    display: flex;
+    justify-content: space-between;
+    width: 261px;
+}
+
+.range-data label {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -414,6 +478,7 @@ header h3 {
     text-align: left;
     letter-spacing: normal;
     color: #283136;
+    display: inline-block;
 }
 
 .range-data input {
@@ -428,6 +493,14 @@ header h3 {
     border: none;
     outline: none;
     background-color: #eee;
+    width: 80px;
+    border-radius: 5px;
+    padding: 9px 10px 7px 10px;
+    margin-left: 13px;
+}
+
+.filter-item {
+    margin-bottom: 15px;
 }
 
 .filter-item label {
@@ -448,7 +521,7 @@ header h3 {
 
 .filter-list-grid label::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 26px;
     height: 26px;
@@ -500,7 +573,7 @@ input:checked:active~label::before {
     opacity: 0.1;
 }
 
-.filter button {
+.filter .common-button {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -514,6 +587,8 @@ input:checked:active~label::before {
     border: none;
     outline-style: none;
     background-color: #eee;
+    width: 260px;
+    padding: 17px 0;
 }
 
 .filter button:hover,
@@ -537,12 +612,16 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
+    padding: 0;
+    margin: 0;
+    margin-right: 267px;
 }
 
 .sort-list {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-right: 47px;
 }
 
 .sort-list a {
@@ -575,6 +654,7 @@ input:checked:active~label::before {
     outline: none;
 }
 
+
 .sort-button path {
     opacity: 0.2;
     fill: #a6a6a6;
@@ -592,10 +672,14 @@ input:checked:active~label::before {
     opacity: 1;
     fill: #231f20;
 }
-
+.sort-button-down {
+    margin-right: 18px;
+}
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-item {
@@ -611,6 +695,10 @@ input:checked:active~label::before {
     padding-top: 39px;
     list-style: none;
     border: solid 1px #00010119;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
 }
 
 .catalog-item::before {
@@ -668,6 +756,12 @@ input:checked:active~label::before {
     width: 360px;
     height: 231px;
     background-color: #eee;
+    padding: 0 66px;
+    padding-top:29px;
+    padding-bottom: 43px;
+    display: flex; 
+    flex-direction: column;
+align-items: center;    
 }
 
 .button-select h4 {
@@ -682,6 +776,7 @@ input:checked:active~label::before {
     text-align: center;
     letter-spacing: normal;
     color: #000;
+    text-transform: uppercase;
 }
 
 .button-select p {
@@ -696,10 +791,13 @@ input:checked:active~label::before {
     text-align: center;
     letter-spacing: normal;
     color: #666;
+    margin-bottom: 30px;
 }
 
 .button-select .common-button {
     background-color: #fb565a;
+    width: 200px;
+    padding: 8px 0;
 }
 
 .button-select .common-button:hover,
@@ -716,6 +814,7 @@ input:checked:active~label::before {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .pagination-list a {
