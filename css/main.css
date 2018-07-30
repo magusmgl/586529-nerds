@@ -76,7 +76,10 @@ html {
     margin-top: 49px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 82px;
+   
+}
+.inner-page .main-navigation-wrapper {
+     margin-bottom: 72px;
 }
 
 .main-header-logo,
@@ -170,6 +173,7 @@ html {
 .site-navigation .active {
     color: #000;
     border-bottom: 2px solid #fb565a;
+    padding-bottom: 9px;
 }
 
 .slider {
@@ -180,7 +184,7 @@ html {
 .slider-controls {
     position: absolute;
     left: 528px;
-    bottom: 97px;
+    bottom: 103px;
     z-index: 100;
     width: 160px;
     height: 18px;
@@ -261,7 +265,7 @@ html {
     margin: 0;
     text-align: left;
     color: #283136;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     max-width: 410px;
 }
 
@@ -305,7 +309,7 @@ html {
 
 .slider .common-button {
     width: 240px;
-    padding: 13px 0;
+    padding: 15px 0;
     background-color: #fb565a;
 }
 
@@ -346,13 +350,14 @@ header h3 {
     text-align: center;
     letter-spacing: normal;
     color: #000;
-    margin-bottom: 116px;
+    margin-bottom: 108px;
 }
 
-.inner-page .container {
+.inner-page .index-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 171px;
 }
 
 .filter {
@@ -371,7 +376,7 @@ header h3 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 59px;
+    margin-bottom: 53px;
 }
 
 .sort-list {
@@ -391,11 +396,11 @@ header h3 {
     border: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
 }
 
 .filter fieldset:first-child {
-    margin-bottom: 62px;
+    margin-bottom: 56px;
 }
 
 .filter legend {
@@ -409,11 +414,11 @@ header h3 {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     color: #000;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
 }
 
 fieldset:first-child legend {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
 
 .filter-list-grid,
@@ -432,7 +437,7 @@ fieldset:first-child legend {
     padding-left: 21px;
     border-radius: 5px;
     background-color: #eee;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     cursor: pointer;
 }
 
@@ -459,7 +464,7 @@ fieldset:first-child legend {
 }
 
 .range-controls .range-toggle-max {
-    left: 170px;
+    left: 160px;
 }
 
 .range-data {
@@ -503,6 +508,10 @@ fieldset:first-child legend {
     margin-bottom: 15px;
 }
 
+.filter-item:last-of-type {
+    margin-bottom: 0;
+}
+
 .filter-item label {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -512,7 +521,7 @@ fieldset:first-child legend {
     line-height: 20px;
     position: relative;
     /* временный отступ */
-    padding-left: 40px;
+    padding-left: 35px;
     cursor: pointer;
     text-align: left;
     letter-spacing: normal;
@@ -614,7 +623,7 @@ input:checked:active~label::before {
     color: #000;
     padding: 0;
     margin: 0;
-    margin-right: 267px;
+    margin-right: 266px;
 }
 
 .sort-list {
@@ -636,6 +645,7 @@ input:checked:active~label::before {
     opacity: 0.3;
     color: #000;
     outline: none;
+    text-transform: uppercase;
 }
 
 .sort-list a:hover,
@@ -726,10 +736,11 @@ input:checked:active~label::before {
     display: block;
 }
 
-.catalog-item img {
+
+/* .catalog-item img {
     width: 360px;
     height: 576px;
-}
+} */
 
 .catalog-item .common-button {
     cursor: pointer;
@@ -755,8 +766,8 @@ input:checked:active~label::before {
     width: 360px;
     height: 231px;
     background-color: #eee;
-    padding: 0 66px;
-    padding-top: 29px;
+    padding: 0px 80px;
+    padding-top: 26px;
     padding-bottom: 43px;
 }
 
@@ -773,7 +784,7 @@ input:checked:active~label::before {
     letter-spacing: normal;
     color: #000;
     text-transform: uppercase;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
 }
 
 .button-select p {
@@ -794,7 +805,7 @@ input:checked:active~label::before {
 .button-select .common-button {
     background-color: #fb565a;
     width: 200px;
-    padding: 8px 0;
+    padding: 16px 0;
 }
 
 .button-select .common-button:hover,
@@ -891,6 +902,7 @@ input:checked:active~label::before {
     text-align: left;
     color: #000;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .service-item p {
@@ -902,7 +914,7 @@ input:checked:active~label::before {
     line-height: 24px;
     margin: 0;
     text-align: left;
-    margin-bottom: 23px;
+    margin-bottom: 31px;
 }
 
 .service-item img {
@@ -969,13 +981,13 @@ input:checked:active~label::before {
     display: flex;
     flex-wrap: wrap;
     border-top: 2px solid #e1e1e1;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
 }
 
 .advantages {
     width: 650px;
     margin-right: 149px;
-    padding-top: 80px;
+    padding-top: 73px;
 }
 
 .advantages h3 {
@@ -1007,8 +1019,8 @@ input:checked:active~label::before {
 
 .advantages li {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
+    padding-left: 35px;
+    margin-bottom: 24px;
 }
 
 .advantages li:last-child {
@@ -1042,10 +1054,11 @@ input:checked:active~label::before {
 
 .features .features-header {
     margin-bottom: 45px;
+    letter-spacing: 0.5px;
 }
 
 .advantages .advantages-header {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 
 .features {
@@ -1058,7 +1071,7 @@ input:checked:active~label::before {
 .features img {
     width: 360px;
     height: 208px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .features-list {
@@ -1070,12 +1083,12 @@ input:checked:active~label::before {
 .features-list li {
     display: flex;
     flex-direction: column;
-    width: 93px;
+    width: 120px;
 }
 
 .features-item span {
     vertical-align: super;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .features-item .percent {
@@ -1105,8 +1118,8 @@ input:checked:active~label::before {
 }
 
 .projects {
-    padding-top: 46px;
-    padding-bottom: 44px;
+    padding-top: 63px;
+    padding-bottom: 20px;
     margin-bottom: 80px;
     border-top: 2px solid #e1e1e1;
     border-bottom: 2px solid #e1e1e1;
@@ -1137,8 +1150,8 @@ input:checked:active~label::before {
     position: absolute;
     content: "";
     width: 2px;
-    top: 9%;
-    right: 0;
+    top: 2%;
+    right: 0px;
     height: 52px;
     background-color: #e1e1e1;
     transform: rotate(180deg);
@@ -1199,8 +1212,8 @@ input:checked:active~label::before {
     background-image: url("../img/mapMarkerPng.png");
     background-position: 0 0;
     background-repeat: no-repeat;
-    top: 85px;
-    right: 405px;
+    top: 88px;
+    right: 408px;
     width: 213px;
     height: 190px;
 }
@@ -1229,7 +1242,7 @@ input:checked:active~label::before {
     margin: 0;
     text-align: left;
     color: #000;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 }
 
 .contacts-card p {
@@ -1243,9 +1256,11 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #666;
-    margin-bottom: 37px;
+    margin-bottom: 17px;
 }
-
+.contacts-card p:last-of-type {
+    margin-bottom: 36px;
+}
 .contacts-card .common-button {
     width: 219px;
     cursor: pointer;
@@ -1274,11 +1289,12 @@ input:checked:active~label::before {
 
 .footer-social {
     width: 262px;
-    margin-right: 139px;
+    margin-right: 138px;
 }
 
 .discount {
     width: 550px;
+    padding-top: 7px;
 }
 
 .footer-social ul {
