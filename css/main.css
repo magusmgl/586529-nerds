@@ -1399,6 +1399,7 @@ input:checked:active~label::before {
     margin-bottom: -295px;
     position: fixed;
     background-color: #ffffff;
+    z-index: 200;
 }
 
 .modal-show {
