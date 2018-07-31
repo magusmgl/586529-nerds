@@ -867,6 +867,7 @@ input:checked:active~label::before {
     color: #000;
     background-color: #eee;
     padding: 17px 0;
+    outline: none;
 }
 
 .pagination-list a:hover,
