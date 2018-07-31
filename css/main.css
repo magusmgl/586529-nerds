@@ -172,6 +172,11 @@ html {
     color: #000;
 }
 
+.user-navigation a:active::before {
+        opacity: 1;
+
+}
+
 .site-navigation .active {
     color: #000;
     border-bottom: 2px solid #fb565a;
