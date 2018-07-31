@@ -1,4 +1,4 @@
-/* 1. иконка корзины меняет прозрачность при нажатии
+/* 1. Ð¸ÐºÐ¾Ð½ÐºÐ° ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹ Ð¼ÐµÐ½ÑÐµÑ‚ Ð¿Ñ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ð¾ÑÑ‚ÑŒ Ð¿Ñ€Ð¸ Ð½Ð°Ð¶Ð°Ñ‚Ð¸Ð¸
 
 */
 
@@ -25,6 +25,7 @@ a {
 img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -332,7 +333,7 @@ html {
 }
 
 
-/* внутреняя страница */
+/* Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½ÑÑ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° */
 
 .site-navigation-list .active,
 .site-navigation-list .active:hover,
@@ -341,7 +342,7 @@ html {
 }
 
 .inner-page .main-header {
-    margin-bottom: 57px;
+    margin-bottom: 55px;
 }
 
 header h3 {
@@ -364,7 +365,7 @@ header h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 171px;
+    margin-bottom: 59px;
 }
 
 .filter {
@@ -383,7 +384,7 @@ header h3 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 }
 
 .sort-list {
@@ -403,11 +404,11 @@ header h3 {
     border: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
 }
 
 .filter fieldset:first-child {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
 }
 
 .filter legend {
@@ -425,7 +426,7 @@ header h3 {
 }
 
 fieldset:first-child legend {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 
 .filter-list-grid,
@@ -444,8 +445,9 @@ fieldset:first-child legend {
     padding-left: 21px;
     border-radius: 5px;
     background-color: #eee;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
     cursor: pointer;
+    box-sizing:  border-box;
 }
 
 .range-controls .scale {
@@ -468,6 +470,7 @@ fieldset:first-child legend {
     background-image: url("../img/filterButton.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    left: 18px;
 }
 
 .range-controls .range-toggle-max {
@@ -478,6 +481,7 @@ fieldset:first-child legend {
     display: flex;
     justify-content: space-between;
     width: 261px;
+    box-sizing:  border-box;
 }
 
 .range-data label {
@@ -508,11 +512,11 @@ fieldset:first-child legend {
     width: 80px;
     border-radius: 5px;
     padding: 9px 10px 7px 10px;
-    margin-left: 13px;
+    margin-left: 15px;
 }
 
 .filter-item {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .filter-item:last-of-type {
@@ -527,7 +531,7 @@ fieldset:first-child legend {
     font-stretch: normal;
     line-height: 20px;
     position: relative;
-    /* временный отступ */
+    /* Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ð¹ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿ */
     padding-left: 35px;
     cursor: pointer;
     text-align: left;
@@ -604,7 +608,7 @@ input:checked:active~label::before {
     outline-style: none;
     background-color: #eee;
     width: 260px;
-    padding: 17px 0;
+    padding: 16px 0;
 }
 
 .filter button:hover,
@@ -698,30 +702,36 @@ input:checked:active~label::before {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    list-style: none;
+    margin-bottom: 59px;
 }
 
 .catalog-item {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-right: 40px;
-    margin-bottom: 33px;
+    margin-right: 39px;
+    margin-bottom: 34px;
     z-index: 20;
     width: 360px;
     /* test  */
     padding-top: 39px;
-    list-style: none;
-    border-bottom: 2px solid red;
+   
 }
 
 .catalog-item:nth-child(2n) {
     margin-right: 0;
 }
 
+.catalog-item:nth-child(5),
+.catalog-item:nth-child(6) {
+    margin-bottom: 0;
+}
+
 .catalog-item::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 360px;
     height: 40px;
     content: "";
@@ -776,6 +786,7 @@ input:checked:active~label::before {
     padding: 0px 80px;
     padding-top: 26px;
     padding-bottom: 43px;
+    box-sizing: border-box;
 }
 
 .button-select h4 {
@@ -878,7 +889,7 @@ input:checked:active~label::before {
 }
 
 
-/* внутренняя страница конец */
+/* Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÑÑ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÐºÐ¾Ð½ÐµÑ† */
 
 .service-list {
     margin: 0;
