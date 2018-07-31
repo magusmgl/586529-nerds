@@ -62,8 +62,10 @@ html {
 }
 
 .container {
-    width: 1160px;
+    width: 1161px;
     margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: content-box;
 }
 
 .main-header .container {
@@ -76,10 +78,10 @@ html {
     margin-top: 49px;
     display: flex;
     flex-wrap: wrap;
-   
 }
+
 .inner-page .main-navigation-wrapper {
-     margin-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .main-header-logo,
@@ -126,7 +128,7 @@ html {
 
 .site-navigation {
     width: 438px;
-    margin-right: 240px;
+    margin-right: 244px;
 }
 
 .user-navigation ul {
@@ -135,7 +137,7 @@ html {
 
 .basket-link {
     position: relative;
-    padding-left: 42px;
+    padding-left: 40px;
 }
 
 .basket-link:before {
@@ -143,7 +145,7 @@ html {
     content: "";
     width: 16px;
     height: 16px;
-    top: 0;
+    top: 3px;
     left: 0;
     background-image: url("../img/cartIcon.svg");
     background-repeat: no-repeat;
@@ -265,7 +267,7 @@ html {
     margin: 0;
     text-align: left;
     color: #283136;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     max-width: 410px;
 }
 
@@ -308,8 +310,8 @@ html {
 }
 
 .slider .common-button {
-    width: 240px;
-    padding: 15px 0;
+    width: 239px;
+    padding: 16px 0;
     background-color: #fb565a;
 }
 
@@ -902,7 +904,7 @@ input:checked:active~label::before {
     text-align: left;
     color: #000;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .service-item p {
@@ -914,18 +916,19 @@ input:checked:active~label::before {
     line-height: 24px;
     margin: 0;
     text-align: left;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
+    width: 250px;
 }
 
 .service-item img {
     width: 300px;
     height: 146px;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 }
 
 .service-item .common-button {
     width: 160px;
-    padding: 17px 0;
+    padding: 16px 0;
 }
 
 .service-item:nth-child(1) .common-button {
@@ -1053,8 +1056,7 @@ input:checked:active~label::before {
 }
 
 .features .features-header {
-    margin-bottom: 45px;
-    letter-spacing: 0.5px;
+    margin-bottom: 44px;
 }
 
 .advantages .advantages-header {
@@ -1066,6 +1068,7 @@ input:checked:active~label::before {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
+    align-items: center;
 }
 
 .features img {
@@ -1101,7 +1104,7 @@ input:checked:active~label::before {
     text-align: left;
     letter-spacing: normal;
     color: #000;
-    margin-bottom: 26px;
+    margin-bottom: 29px;
 }
 
 .features-item .indicator {
@@ -1118,8 +1121,8 @@ input:checked:active~label::before {
 }
 
 .projects {
-    padding-top: 63px;
-    padding-bottom: 20px;
+    padding-top: 47px;
+    padding-bottom: 38px;
     margin-bottom: 80px;
     border-top: 2px solid #e1e1e1;
     border-bottom: 2px solid #e1e1e1;
@@ -1131,12 +1134,20 @@ input:checked:active~label::before {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*! justify-content: space-between; */
     align-items: center;
 }
 
+.project-item{
+    margin-right: 10px;
+}
+
+.project-item:nth-child(4n) {
+    margin-right: 0;
+}
+
 .projects a {
-    width: 290px;
+    width: 279px;
     height: 96px;
     display: flex;
     justify-content: center;
@@ -1144,13 +1155,14 @@ input:checked:active~label::before {
     padding: 0;
     position: relative;
     outline: none;
+    align-items: center;
 }
 
 .projects a::after {
     position: absolute;
     content: "";
     width: 2px;
-    top: 2%;
+    top: 20px;
     right: 0px;
     height: 52px;
     background-color: #e1e1e1;
@@ -1224,11 +1236,11 @@ input:checked:active~label::before {
 }
 
 .contacts-card {
-    width: 319px;
-    padding: 48px 50px;
+    width: 219px;
+    padding: 46px 50px;
     position: absolute;
-    top: 54px;
-    left: 140px;
+    top: 53px;
+    left: 139px;
     background-color: #ffffff;
 }
 
@@ -1257,16 +1269,19 @@ input:checked:active~label::before {
     letter-spacing: normal;
     color: #666;
     margin-bottom: 17px;
+    width: 210px;
 }
+
 .contacts-card p:last-of-type {
-    margin-bottom: 36px;
+    margin-bottom: 39px;
 }
+
 .contacts-card .common-button {
     width: 219px;
     cursor: pointer;
     border: none;
     background-color: #fb565a;
-    padding: 17px 0;
+    padding: 16px 0;
     outline: none;
 }
 
@@ -1289,7 +1304,7 @@ input:checked:active~label::before {
 
 .footer-social {
     width: 262px;
-    margin-right: 138px;
+    margin-right: 137px;
 }
 
 .discount {
@@ -1435,7 +1450,7 @@ input:checked:active~label::before {
     border: solid 2px #d7dcde;
     outline: none;
     background-color: #fff;
-    padding: 18px 16px;
+    padding: 15px 16px;
     width: 360px
 }
 
